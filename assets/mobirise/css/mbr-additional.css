@@ -1376,23 +1376,28 @@ body {
 .dropup .dropdown-toggle::after {
   display: none;
 }
-.cid-rahlg6iYpm {
-  background-image: url("../../../assets/images/webpic-8-2000x1545.jpg");
+.cid-raiagLNq4t {
+  padding-top: 120px;
+  padding-bottom: 30px;
+  background-color: #ffffff;
 }
-.cid-rahlg6iYpm h1 {
+@media (min-width: 992px) {
+  .cid-raiagLNq4t .mbr-figure {
+    padding-right: 4rem;
+  }
+}
+@media (max-width: 991px) {
+  .cid-raiagLNq4t .mbr-figure {
+    padding-bottom: 3rem;
+  }
+}
+@media (max-width: 767px) {
+  .cid-raiagLNq4t .mbr-text {
+    text-align: center;
+  }
+}
+.cid-raiagLNq4t DIV {
   color: #616161;
-}
-.cid-rahlg6iYpm h2,
-.cid-rahlg6iYpm h3,
-.cid-rahlg6iYpm p {
-  color: #767676;
-}
-.cid-rahlg6iYpm .mbr-section-subtitle {
-  font-style: italic;
-}
-.cid-rahlg6iYpm P {
-  color: #4f4943;
-  text-align: left;
 }
 .cid-rahvoGgnES {
   padding-top: 30px;
