@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CS 294-286: Machine Learning & Human Behavior</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400|Roboto:400,700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Helvetica', Arial, sans-serif;
+            margin: 0;
+            background: #f8fafc;
+            color: #222;
+            line-height: 1.7;
+        }
+        .container {
+            max-width: 900px;
+            margin: 40px auto 40px auto;
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: 0 4px 24px rgba(44,62,80,0.08);
+            padding: 40px 32px 32px 32px;
+        }
+        h1, h2 {
+            font-family: 'Montserrat', Arial, sans-serif;
+            color: #2c3e50;
+            margin-top: 0;
+        }
+        h1 {
+            font-size: 2em;
+            letter-spacing: 1px;
+            margin-bottom: 0.2em;
+        }
+        h2 {
+            font-size: 1.5em;
+            margin-top: 2em;
+            margin-bottom: 0.7em;
+            border-bottom: 2px solid #e1e7ec;
+            padding-bottom: 0.2em;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 2em;
+        }
+        .header p {
+            margin: 0.3em 0;
+            font-size: 1.08em;
+        }
+        .header strong {
+            color: #34495e;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 1.5em;
+            background: #f9fbfc;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(44,62,80,0.04);
+        }
+        th, td {
+            border: none;
+            padding: 12px 10px;
+            text-align: left;
+            vertical-align: top;
+            font-size: 1em;
+        }
+        th {
+            background-color: #e1e7ec;
+            color: #2c3e50;
+            font-weight: 700;
+            font-size: 1.08em;
+            letter-spacing: 0.5px;
+        }
+        tr:nth-child(even) td {
+            background-color: #f4f7fa;
+        }
+        tr td[colspan="2"] {
+            background: linear-gradient(90deg, #e1e7ec 60%, #f9fbfc 100%);
+            font-weight: bold;
+            color: #34495e;
+            font-size: 1.07em;
+            letter-spacing: 0.5px;
+            border-top: 2px solid #d1dbe6;
+        }
+        a {
+            color: #2980b9;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        a:hover {
+            color: #1abc9c;
+            text-decoration: underline;
+        }
+        em {
+            color: #888;
+        }
+        @media (max-width: 700px) {
+            .container {
+                padding: 16px 6px;
+            }
+            h1 {
+                font-size: 1.5em;
+            }
+            h2 {
+                font-size: 1.1em;
+            }
+            table, th, td {
+                font-size: 0.95em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>CS 294-286: Machine Learning & Human Behavior</h1>
+            <p><strong>University of California, Berkeley</strong></p>
+            <p><strong>Instructor:</strong> Serina Chang (<a href="mailto:serinac@berkeley.edu">serinac@berkeley.edu</a>)</p>
+            <p><strong>Time:</strong> TuTh 2:00-3:30pm</p>
+            <p><strong>Location:</strong> Wheeler 200</p>
+        </div>
+
+        <h2>Summary</h2>
+        <p>This course will explore the intersection of machine learning (ML) and human behavior. The format of the course will be a mix of paper presentations, lectures, and a final project. We will cover three units:</p>
+
+        <p><strong>Unit I: Modeling Human Behavior with ML.</strong>
+            Predicting or simulating human behaviors is useful when behaviors are difficult to observe (e.g., for cost or privacy reasons) or cannot be observed (e.g., future or counterfactual behaviors). In this unit, we'll begin with recent efforts to simulate behaviors with LLMs, including survey responses, experimental results, and social interactions. We will discuss challenges in this domain, such as bias, diversity, steerability, generalization, and scalability, along with approaches to address these challenges. We will start from the individual-level and scale up to entire networks and societies, exploring both LLM-based and more traditional approaches to modeling human societies.
+        </p>
+
+        <p><strong>Unit II: Algorithmically Infused Societies.</strong>
+            In this unit, we'll discuss the interplay between algorithms and social systems: how algorithms shape human behaviors and human behaviors feed back into algorithms, resulting in feedback loops. We will study these loops in different contexts, such as recommender systems and social media feeds, and explore human awareness of algorithms and strategic shifts in behavior. We will end with a discussion about automating human decision-making, including how to compare human vs. algorithmic decisions under selective labels and the validity and risks of such automation.
+        </p>
+
+        <p><strong>Unit III: Adapting AI to Human Behavior.</strong>
+            In this final unit, we will focus on how humans behave in interaction with AI systems and how we should adapt generative AI systems to work more effectively with humans. We will begin with analyses of human-AI interactions in the wild and discuss how to evaluate human-AI interactions. We will then explore various ways in which AI needs to adapt to humans in order to improve human-AI outcomes, such as how to understand human intents (e.g., given ambiguous user queries), learn individual preferences and personalize models, mitigate overreliance and provide explanations, and strive for complementarity.
+        </p>
+
+        <h2>Schedule</h2>
+        <p>The schedule is tentative and will be finalized after the first class. Readings will be added soon.</p>
+        <table>
+            <tr>
+                <th style="width: 100px;">Date</th>
+                <th>Lecture</th>
+            </tr>
+            <tr><td>8/28 Thu</td><td>
+                Introduction to course
+            </td></tr>
+            <tr><td colspan="2"><strong>Unit I. Modeling Human Behaviors with ML</strong></td></tr>
+            <tr><td>09/02 Tue</td><td>
+                Introduction to LLM social simulation<br>
+                <ul style="font-size:0.97em; margin:0.5em 0 0.5em 1.2em; padding-left:1em;">
+                    <li>
+                        Anthis et al (ICML 2025): 
+                        <a href="https://arxiv.org/abs/2504.02234" target="_blank">"Position: LLM Social Simulations Are a Promising Research Method"</a>
+                    </li>
+                    <li>
+                        Hewitt*, Ashokkumar* et al (2024): 
+                        <a href="https://docsend.com/view/qeeccuggec56k9hd" target="_blank">"Predicting results of social science experiments using large language models"</a>
+                    </li>
+                </ul>
+            </td></tr>
+            <tr><td>09/04 Thu</td><td>
+                Bias and diversity
+            </td></tr>
+            <tr><td>09/09 Tue</td><td>
+                Steerability: fine-tuning, steering vectors
+            </td></tr>
+            <tr><td>09/11 Thu</td><td>
+                Social interactions and networks
+            </td></tr>
+            <tr><td>09/16 Tue</td><td>
+                <strong>GUEST LECTURE:</strong> <a href="https://www.joonsungpark.com/" target="_blank">Joon Sung Park</a><br>
+                Generative agent simulations of individuals and societies
+            </td></tr>
+            <tr><td>09/18 Thu</td><td>Foundation model of individuals, generalization</td></tr>
+            <tr><td>09/23 Tue</td><td>Limits to prediction</td></tr>
+            <tr><td>09/25 Thu</td><td>Mobility patterns, interactions with the physical environment</td></tr>
+            <tr><td>09/30 Tue</td><td>Agent-based modeling, policy planning</td></tr>
+
+            <tr><td colspan="2"><strong>Unit II. Algorithmically Infused Societies</strong></td></tr>
+            <tr><td>10/02 Thu</td><td>
+                Introduction to algorithmically infused societies<br>
+                <ul style="font-size:0.97em; margin:0.5em 0 0.5em 1.2em; padding-left:1em;">
+                    <li>
+                        Wagner et al (<i>Nature</i> 2021):
+                        <a href="https://www.nature.com/articles/s41586-021-03666-1" target="_blank">"Measuring algorithmically infused societies"</a>
+                    </li>
+                    <li>
+                        Brinkmann et al (<i>Nature Human Behaviour</i> 2023): 
+                        <a href="https://www.nature.com/articles/s41562-023-01742-2" target="_blank">"Machine culture"</a>
+                    </li>
+                </ul>
+            </td></tr>
+            <tr><td>10/07 Tue</td><td>Social media, feed algorithms, polarization</td></tr>
+            <tr><td>10/09 Thu</td><td>Recommender systems, diversity</td></tr>
+            <tr><td>10/14 Tue</td><td>Algorithmic awareness & strategic behavior</td></tr>
+            <tr><td>10/16 Thu</td><td>Automating human decision-making</td></tr>
+            <tr><td>10/21 Tue</td><td><strong>GUEST LECTURE</strong> (TBD)</td></tr>
+            
+            <tr><td colspan="2"><strong>Unit III. Adapting AI to Human Behavior</strong></td></tr>
+            <tr><td>10/23 Thu</td><td>Human-AI conversations in the wild</td></tr>
+            <tr><td>10/28 Tue</td><td>Evaluating human-AI interactions</td></tr>
+            <tr><td>10/30 Thu</td><td>Understanding human intents</td></tr>
+            <tr><td>11/04 Tue</td><td>Learning individual preferences, personalization</td></tr>
+            <tr><td>11/06 Thu</td><td><strong>GUEST LECTURE:</strong> <a href="https://collinskatie.github.io/" target="_blank">Katie Collins</a></td></tr>
+            <tr><td>11/11 Tue</td><td><em>Academic and Administrative Holiday</em></td></tr>
+            <tr><td>11/13 Thu</td><td>Human-AI decision-making, overreliance</td></tr>
+            <tr><td>11/18 Tue</td><td>Towards human-AI complementarity</td></tr>
+            <tr><td>11/20 Thu</td><td>Project presentations</td></tr>
+            <tr><td>11/25 Tue</td><td>Project presentations</td></tr>
+            <tr><td>11/27 Thu</td><td><em>Thanksgiving Break</em></td></tr>
+            <tr><td>12/02 Tue</td><td>
+                <strong>GUEST LECTURE:</strong> <a href="https://jessylin.com/" target="_blank">Jessy Lin</a><br>
+                Decision-oriented dialogues and human-AI collaboration
+            </td></tr>
+            <tr><td>12/04 Thu</td><td>Course wrap-up</td></tr>
+        </table>
+    </div>
+</body>
+</html>
