@@ -119,18 +119,18 @@
             <p><strong>Time:</strong> TuTh 2:00-3:30pm</p>
             <p><strong>Location:</strong> Wheeler 200</p>
             <p><strong>Office Hours:</strong> By appointment</p>
-            <div style="margin-top: 1.5em;">
+            <!-- <div style="margin-top: 1.5em;">
                 <p style="background: #ffe066; color: #b36b00; font-weight: bold; border-radius: 8px; padding: 12px 16px; font-size: 1.08em;">
                     <strong>If you are interested in taking this course and can't directly enroll, please fill out <a href="https://forms.gle/8BzLx91bC8Dg3GY7A" target="_blank" style="color: #d35400; text-decoration: underline;">this form</a></strong>.
                 </p>
-            </div>
+            </div> -->
         </div>
 
         <h2>Summary</h2>
         <p>This course will explore the intersection of machine learning (ML) and human behavior. The format of the course will be a mix of paper presentations, lectures, and a final project. We will cover three units:</p>
 
         <p><strong>Unit I: Modeling Human Behavior with ML.</strong>
-            Predicting or simulating human behaviors is useful when behaviors are difficult to observe (e.g., for cost or privacy reasons) or cannot be observed (e.g., future or counterfactual behaviors). In this unit, we'll begin with recent efforts to simulate behaviors with LLMs, including survey responses, experimental results, and social interactions. We will discuss challenges in this domain, such as bias, diversity, steerability, generalization, and scalability, along with approaches to address these challenges. We will start from the individual-level and scale up to entire networks and societies, exploring both LLM-based and more traditional approaches to modeling human societies.
+            Predicting or simulating human behaviors is useful when behaviors are difficult to observe (e.g., for cost or privacy reasons) or cannot be observed (e.g., future or counterfactual behaviors). In this unit, we'll begin with recent efforts to simulate behaviors with LLMs, including survey responses, experimental results, and social interactions. We will discuss challenges in this domain, such as bias, diversity, validation, generalization, and scalability, along with approaches to address these challenges. We will start from the individual-level and scale up to entire networks and societies, exploring both LLM-based and more traditional approaches to modeling human societies.
         </p>
 
         <p><strong>Unit II: Algorithmically Infused Societies.</strong>
@@ -146,33 +146,53 @@
         <table>
             <tr>
                 <th style="width: 100px;">Date</th>
-                <th>Lecture</th>
+                <th>Topic</th>
             </tr>
             <tr><td>8/28 Thu</td><td>
-                Introduction to course
+                <b>LECTURE: </b>Introduction to course
             </td></tr>
             <tr><td colspan="2"><strong>Unit I. Modeling Human Behaviors with ML</strong></td></tr>
             <tr><td>09/02 Tue</td><td>
-                Introduction to LLM social simulation<br>
-                <ul style="font-size:0.97em; margin:0.5em 0 0.5em 1.2em; padding-left:1em;">
-                    <li>
-                        Anthis et al (ICML 2025): 
-                        <a href="https://arxiv.org/abs/2504.02234" target="_blank">"Position: LLM Social Simulations Are a Promising Research Method"</a>
-                    </li>
-                    <li>
-                        Hewitt*, Ashokkumar* et al (2024): 
-                        <a href="https://docsend.com/view/qeeccuggec56k9hd" target="_blank">"Predicting results of social science experiments using large language models"</a>
-                    </li>
-                </ul>
+                <b>LECTURE:</b> LLM social simulation and agent-based modeling<br>
             </td></tr>
             <tr><td>09/04 Thu</td><td>
                 Bias and diversity
+                <ul style="font-size:0.97em; margin:0.5em 0 0.5em 1.2em; padding-left:1em;">
+                    <li>
+                        Santurkar et al (ICML 2023): 
+                        <a href="https://proceedings.mlr.press/v202/santurkar23a" target="_blank">"Whose Opinions Do Language Models Reflect?"</a>
+                    </li>
+                    <li>
+                        Bisbee et al (<i>Political Analysis</i> 2024): 
+                        <a href="https://www.cambridge.org/core/journals/political-analysis/article/synthetic-replacements-for-human-survey-data-the-perils-of-large-language-models/B92267DC26195C7F36E63EA04A47D2FE" target="_blank">"Synthetic Replacements for Human Survey Data? The Perils of Large Language Models"</a>
+                    </li>
+                </ul>
             </td></tr>
             <tr><td>09/09 Tue</td><td>
                 Steerability: fine-tuning, steering vectors
+                <ul style="font-size:0.97em; margin:0.5em 0 0.5em 1.2em; padding-left:1em;">
+                    <li>
+                        Chu et al (arXiv 2023): 
+                        <a href="https://arxiv.org/abs/2303.16779" target="_blank">"Language Models Trained on Media Diets Can Predict Public Opinion"</a>
+                    </li>
+                    <li>
+                        Kim et al (ICLR 2025): 
+                        <a href="https://openreview.net/forum?id=rwqShzb9li" target="_blank">"Linear Representations of Political Perspective Emerge in Large Language Models"</a>
+                    </li>
+                </ul>
             </td></tr>
             <tr><td>09/11 Thu</td><td>
-                Foundation model of individuals, generalization
+                Validation and generalization
+                <ul style="font-size:0.97em; margin:0.5em 0 0.5em 1.2em; padding-left:1em;">
+                    <li>
+                        Hewitt et al (preprint 2024): 
+                        <a href="https://docsend.com/view/qeeccuggec56k9hd" target="_blank">"Predicting results of social science experiments using large language models"</a>
+                    </li>
+                    <li>
+                        Binz et al (<i>Nature</i> 2025): 
+                        <a href="https://www.nature.com/articles/s41586-025-09215-4" target="_blank">"A foundation model to predict and capture human cognition"</a>
+                    </li>
+                </ul>
             </td></tr>
             <tr><td>09/16 Tue</td><td>
                 <strong>GUEST LECTURE:</strong> <a href="https://www.joonsungpark.com/" target="_blank">Joon Sung Park</a><br>
@@ -180,24 +200,68 @@
             </td></tr>
             <tr><td>09/18 Thu</td><td>
                 Limits to prediction
+                <ul style="font-size:0.97em; margin:0.5em 0 0.5em 1.2em; padding-left:1em;">
+                    <li>
+                        Salganik et al (<i>PNAS</i> 2020): 
+                        <a href="https://www.pnas.org/doi/abs/10.1073/pnas.1915006117" target="_blank">"Measuring the predictability of life outcomes with a scientific mass collaboration"</a>
+                    </li>
+                    <li>
+                        Lundberg et al (<i>PNAS</i> 2024): 
+                        <a href="https://www.pnas.org/doi/abs/10.1073/pnas.2322973121" target="_blank">"The origins of unpredictability in life outcome prediction tasks"</a>
+                    </li>
+                </ul>
             </td></tr>
             <tr><td>09/23 Tue</td><td>
                 Social interactions and networks
-            </td></tr>
-            <tr><td>09/25 Thu</td><td>Mobility patterns, interactions with the physical environment</td></tr>
-            <tr><td>09/30 Tue</td><td>Agent-based modeling, policy planning</td></tr>
-
-            <tr><td colspan="2"><strong>Unit II. Algorithmically Infused Societies</strong></td></tr>
-            <tr><td>10/02 Thu</td><td>
-                Introduction to algorithmically infused societies<br>
                 <ul style="font-size:0.97em; margin:0.5em 0 0.5em 1.2em; padding-left:1em;">
                     <li>
-                        Wagner et al (<i>Nature</i> 2021):
-                        <a href="https://www.nature.com/articles/s41586-021-03666-1" target="_blank">"Measuring algorithmically infused societies"</a>
+                        Zhou et al (ICLR 2024): 
+                        <a href="https://openreview.net/forum?id=mM7VurbA4r" target="_blank">"SOTOPIA: Interactive Evaluation for Social Intelligence in Language Agents"</a>
                     </li>
                     <li>
-                        Brinkmann et al (<i>Nature Human Behaviour</i> 2023): 
-                        <a href="https://www.nature.com/articles/s41562-023-01742-2" target="_blank">"Machine culture"</a>
+                        Jia et al (NeurIPS 2024): 
+                        <a href="https://proceedings.neurips.cc/paper_files/paper/2024/file/1cb57fcf7ff3f6d37eebae5becc9ea6d-Paper-Conference.pdf" target="_blank">"Can Large Language Model Agents Simulate Human Trust Behavior?"</a>
+                    </li>
+                </ul>
+            </td></tr>
+            <tr><td>09/25 Thu</td><td>Agent-based modeling and policy-planning
+                <ul style="font-size:0.97em; margin:0.5em 0 0.5em 1.2em; padding-left:1em;">
+                    <li>
+                        Aleta et al (<i>Nature Hum Behav</i> 2020):
+                        <a href="https://www.nature.com/articles/s41562-020-0931-9" target="_blank">"Modelling the impact of testing, contact tracing and household quarantine on second waves of COVID-19"</a>
+                    </li>
+                    <li>
+                        Chopra et al (AAMAS 2025): 
+                        <a href="https://dl.acm.org/doi/10.5555/3709347.3743565" target="_blank">"On the Limits of Agency in Agent-based Models"</a>
+                    </li>
+                </ul>
+            </td></tr>
+
+            <tr><td colspan="2"><strong>Unit II. Algorithmically Infused Societies</strong></td></tr>
+            <tr><td>09/30 Tue</td><td>
+                Recommendation systems
+                <ul style="font-size:0.97em; margin:0.5em 0 0.5em 1.2em; padding-left:1em;">
+                    <li>
+                        Su et al (WWW 2016):
+                        <a href="https://dl.acm.org/doi/10.1145/2872427.2883040" target="_blank">"The Effect of Recommendations on Network Structure"</a>
+                    </li>
+                    <li>
+                        Chaney et al (RecSys 2018): 
+                        <a href="https://dl.acm.org/doi/10.1145/3240323.3240370" target="_blank">"How algorithmic confounding in recommendation systems increases homogeneity and decreases utility"</a>
+                    </li>
+                </ul>
+                Also see Wagner et al (<i>Nature</i> 2021): <a href="https://www.nature.com/articles/s41586-021-03666-1" target="_blank">"Measuring algorithmically infused societies"</a>
+            </td></tr>
+            <tr><td>10/02 Thu</td><td>
+                Social media algorithms<br>
+                <ul style="font-size:0.97em; margin:0.5em 0 0.5em 1.2em; padding-left:1em;">
+                    <li>
+                        Huszár et al (<i>PNAS</i> 2021):
+                        <a href="https://www.pnas.org/doi/10.1073/pnas.2025334119" target="_blank">"Algorithmic amplification of politics on Twitter"</a>
+                    </li>
+                    <li>
+                        Guess et al (<i>Science</i> 2023): 
+                        <a href="https://www.science.org/doi/10.1126/science.abp9364" target="_blank">"How do social media feed algorithms affect attitudes and behavior in an election campaign?"</a>
                     </li>
                 </ul>
             </td></tr>
@@ -205,23 +269,123 @@
                 <strong>GUEST LECTURE:</strong> <a href="http://jonathanstray.com/" target="_blank">Jonathan Stray</a><br>
                 Social media algorithms and polarization
             </td></tr>
-            <tr><td>10/09 Thu</td><td>Recommender systems, diversity</td></tr>
-            <tr><td>10/14 Tue</td><td>Algorithmic awareness & strategic behavior</td></tr>
-            <tr><td>10/16 Thu</td><td>Algorithmic decision-making</td></tr>
+            <tr><td>10/09 Thu</td><td>Algorithmic awareness & strategic behavior
+                <ul style="font-size:0.97em; margin:0.5em 0 0.5em 1.2em; padding-left:1em;">
+                    <li>
+                        Eslami et al (CHI 2016):
+                        <a href="https://dl.acm.org/doi/10.1145/2858036.2858494" target="_blank">"First I 'like' it, then I hide it: Folk Theories of Social Feeds"</a>
+                    </li>
+                    <li>
+                        Hron et al (ICLR 2023): 
+                        <a href="https://openreview.net/forum?id=l6CpxixmUg" target="_blank">"Modeling content creator incentives on algorithm-curated platforms"</a>
+                    </li>
+                </ul>
+            </td></tr>
+            <tr><td>10/14 Tue</td><td>Algorithms for human decision-making I
+                <ul style="font-size:0.97em; margin:0.5em 0 0.5em 1.2em; padding-left:1em;">
+                    <li>
+                        Lakkaraju et al (KDD 2017):
+                        <a href="https://dl.acm.org/doi/10.1145/3097983.3098066" target="_blank">"The Selective Labels Problem: Evaluating Algorithmic Predictions in the Presence of Unobservables"</a>
+                    </li>
+                    <li>
+                        Perdomo et al (ICML 2020): 
+                        <a href="https://proceedings.mlr.press/v119/perdomo20a.html" target="_blank">"Performative Prediction"</a>
+                    </li>
+                </ul>
+                Also see Kleinberg et al (<i>QJE</i> 2018): <a href="https://academic.oup.com/qje/article-abstract/133/1/237/4095198" target="_blank">"Human Decisions and Machine Predictions"</a>
+            </td></tr>
+            <tr><td>10/16 Thu</td><td>Algorithms for human decision-making II
+                <ul style="font-size:0.97em; margin:0.5em 0 0.5em 1.2em; padding-left:1em;">
+                    <li>
+                        Kleinberg et al (<i>American Economic Review</i> 2015):
+                        <a href="https://www.aeaweb.org/articles?id=10.1257/aer.p20151023" target="_blank">"Prediction Policy Problems"</a>
+                    </li>
+                    <li>
+                        Wang et al (<i>ACM Journal on Responsible Computing</i> 2024): 
+                        <a href="https://dl.acm.org/doi/10.1145/3636509" target="_blank">"Against Predictive Optimization: On the Legitimacy of Decision-making Algorithms That Optimize Predictive Accuracy"</a>
+                    </li>
+                </ul>
+            </td></tr>
             <tr><td>10/21 Tue</td><td>
                 <strong>GUEST LECTURE:</strong> <a href="https://diagdavenport.com/" target="_blank">Diag Davenport</a><br>
                 Automating automaticity: algorithms trained on automatic human behaviors
             </td></tr>
             
             <tr><td colspan="2"><strong>Unit III. Adapting AI to Human Behavior</strong></td></tr>
-            <tr><td>10/23 Thu</td><td>Human-AI conversations in the wild</td></tr>
-            <tr><td>10/28 Tue</td><td>Evaluating human-AI interactions</td></tr>
-            <tr><td>10/30 Thu</td><td>Understanding human intents</td></tr>
-            <tr><td>11/04 Tue</td><td>Learning individual preferences, personalization</td></tr>
+            <tr><td>10/23 Thu</td><td>Human-AI interactions in the wild
+                <ul style="font-size:0.97em; margin:0.5em 0 0.5em 1.2em; padding-left:1em;">
+                    <li>
+                        Zhao et al (ICLR 2024):
+                        <a href="https://openreview.net/forum?id=Bl8u7ZRlbM" target="_blank">"WildChat: 1M ChatGPT Interaction Logs in the Wild"</a>
+                    </li>
+                    <li>
+                        Handa et al (arXiv 2025): 
+                        <a href="https://arxiv.org/abs/2503.04761" target="_blank">"Which Economic Tasks are Performed with AI? Evidence from Millions of Claude Conversations"</a>
+                    </li>
+                </ul>
+            </td></tr>
+            <tr><td>10/28 Tue</td><td>Evaluating human-AI interactions
+                <ul style="font-size:0.97em; margin:0.5em 0 0.5em 1.2em; padding-left:1em;">
+                    <li>
+                        Lee et al (<i>TMLR</i> 2023):
+                        <a href="https://openreview.net/forum?id=hjDYJUn9l1" target="_blank">"Evaluating Human-Language Model Interaction"</a>
+                    </li>
+                    <li>
+                        Collins et al (<i>PNAS</i> 2024): 
+                        <a href="https://www.pnas.org/doi/abs/10.1073/pnas.2318124121" target="_blank">"Evaluating language models for mathematics through interactions"</a>
+                    </li>
+                </ul>
+            </td></tr>
+            <tr><td>10/30 Thu</td><td>Understanding human intents
+                <ul style="font-size:0.97em; margin:0.5em 0 0.5em 1.2em; padding-left:1em;">
+                    <li>
+                        Shaikh et al (ACL 2025):
+                        <a href="https://aclanthology.org/2025.acl-long.1016/" target="_blank">"Navigating Rifts in Human-LLM Grounding: Study and Benchmark"</a>
+                    </li>
+                    <li>
+                        Wu et al (ICML 2025): 
+                        <a href="https://openreview.net/forum?id=DmH4HHVb3y" target="_blank">"CollabLLM: From Passive Responders to Active Collaborators"</a>
+                    </li>
+                </ul>
+            </td></tr>
+            <tr><td>11/04 Tue</td><td>Personalization, learning individual preferences
+                <ul style="font-size:0.97em; margin:0.5em 0 0.5em 1.2em; padding-left:1em;">
+                    <li>
+                        Poddar et al (NeurIPS 2024):
+                        <a href="https://neurips.cc/virtual/2024/poster/94141" target="_blank">"Personalizing Reinforcement Learning from Human Feedback with Variational Preference Learning"</a>
+                    </li>
+                    <li>
+                        Kirk et al (<i>Nature Mach Intell</i> 2024): 
+                        <a href="https://www.nature.com/articles/s42256-024-00820-y" target="_blank">"The benefits, risks and bounds of personalizing the alignment of large language models to individuals"</a>
+                    </li>
+                </ul>
+            </td></tr>
             <tr><td>11/06 Thu</td><td><strong>GUEST LECTURE:</strong> <a href="https://collinskatie.github.io/" target="_blank">Katie Collins</a></td></tr>
             <tr><td>11/11 Tue</td><td><em>Academic and Administrative Holiday</em></td></tr>
-            <tr><td>11/13 Thu</td><td>Human-AI decision-making, overreliance</td></tr>
-            <tr><td>11/18 Tue</td><td>Towards human-AI complementarity</td></tr>
+            <tr><td>11/13 Thu</td><td>Human-AI complementarity I
+                <ul style="font-size:0.97em; margin:0.5em 0 0.5em 1.2em; padding-left:1em;">
+                    <li>
+                        Vaccaro et al (<i>Nature Hum Behav</i> 2024):
+                        <a href="https://www.nature.com/articles/s41562-024-02024-1" target="_blank">"When combinations of humans and AI are useful: A systematic review and meta-analysis"</a>
+                    </li>
+                    <li>
+                        Zhang et al (FAccT 2020): 
+                        <a href="https://dl.acm.org/doi/10.1145/3351095.3372852" target="_blank">"Effect of confidence and explanation on accuracy and trust calibration in AI-assisted decision making"</a>
+                    </li>
+                </ul>
+            </td></tr>
+            <tr><td>11/18 Tue</td><td>Human-AI complementarity II
+                <ul style="font-size:0.97em; margin:0.5em 0 0.5em 1.2em; padding-left:1em;">
+                    <li>
+                        Wilder et al (IJCAI 2020):
+                        <a href="https://dl.acm.org/doi/abs/10.5555/3491440.3491652" target="_blank">"Learning to complement humans"</a>
+                    </li>
+                    <li>
+                        Mozannar et al (NeurIPS 2023): 
+                        <a href="https://proceedings.neurips.cc/paper_files/paper/2023/file/61355b9c218505505d1bedede9da56b2-Paper-Conference.pdf" target="_blank">"Effective Human-AI Teams via Learned Natural Language Rules and Onboarding"</a>
+                    </li>
+                </ul>
+            </td></tr>
             <tr><td>11/20 Thu</td><td>Project presentations</td></tr>
             <tr><td>11/25 Tue</td><td>Project presentations</td></tr>
             <tr><td>11/27 Thu</td><td><em>Thanksgiving Break</em></td></tr>
